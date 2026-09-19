@@ -15,6 +15,7 @@ html{scroll-behavior:smooth}
 html{-webkit-text-size-adjust:100%}body{overflow-x:hidden}
 @media (max-width:820px){
 .stack{grid-template-columns:minmax(0,1fr) !important;gap:24px !important}
+.stk2{grid-template-columns:minmax(0,1fr) !important;gap:4px !important}
 div[style*="max-width: 1120px"]{padding-left:20px !important;padding-right:20px !important}
 div[style*="max-width: 1120px"]:not([style*="min-height: 72px"]){padding-top:48px !important;padding-bottom:40px !important}
 #top{padding-top:40px !important;padding-bottom:48px !important}
@@ -25,6 +26,7 @@ div[style*="padding: 56px 48px"]{padding:32px 22px !important}
 div[style*="padding: 28px"]{padding:22px !important}
 div[style*="padding: 32px;"]{padding:24px !important}
 [style*="font-size: 19px"],[style*="font-size:19px"]{font-size:17px !important}
+div.tight[style*="max-width: 1120px"]{padding-top:12px !important;padding-bottom:0 !important}
 }
 @media (max-width:480px){div[style*="font-size: 56px"]{font-size:44px !important}}
 </style>
@@ -39,12 +41,11 @@ div[style*="padding: 32px;"]{padding:24px !important}
 <div style="max-width: 1120px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; min-height: 72px;">
 <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap; padding:8px 0;"><a href="#top" style="font-family: 'Libre Franklin', system-ui, sans-serif; font-size: 22px; font-weight: 600; color: #003D24; text-decoration: none;">Jen Deepa</a><span style="display:inline-block; padding:4px 12px; border-radius:999px; background:#D7FCDC; border:1px solid #BFE5C7; color:#003D24; font-size:12px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase;">Case study · For interview purposes only</span></div>
 <div class="navlinks" style="display: flex; align-items: center; gap: 8px;">
-<a href="#fit" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; color: #003D24; text-decoration: none; font-weight: 500;">Fit</a>
 <a href="#proof" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; color: #003D24; text-decoration: none; font-weight: 500;">Evidence</a>
 <a href="#approach" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; color: #003D24; text-decoration: none; font-weight: 500;">Discovery</a>
+<a href="#phases" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; color: #003D24; text-decoration: none; font-weight: 500;">Roadmap</a>
 <a href="#metrics" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; color: #003D24; text-decoration: none; font-weight: 500;">Metrics</a>
-<a href="#roadmap" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; color: #003D24; text-decoration: none; font-weight: 500;">Roadmap</a>
-<a href="#tracking" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; color: #003D24; text-decoration: none; font-weight: 500;">Post order</a>
+<a href="#more" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; color: #003D24; text-decoration: none; font-weight: 500;">More</a>
 <a href="#contact" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; color: #003D24; text-decoration: none; font-weight: 500;">Contact</a>
 </div>
 </div>
@@ -55,13 +56,22 @@ div[style*="padding: 32px;"]{padding:24px !important}
 <div style="font-size: 14px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #00753A;">Senior Product Manager, Discovery &amp; Recommendations</div>
 <h1 style="margin: 20px 0 0; max-width: 900px; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: clamp(40px, 6vw, 78px); line-height: 1.04; letter-spacing: -0.02em;">Helping busy people find the right thing to order, faster.</h1>
 <p style="margin: 28px 0 0; max-width: 720px; font-size: 20px; line-height: 1.55; color: #2F5A47;">10+ years shipping consumer e-commerce and marketplace products where discovery, trust, and checkout have to work together.</p>
-<div style="margin-top: 32px; max-width: 720px; background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 24px 28px;">
+<div class="stack" style="margin-top: 32px; max-width: 900px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-items: stretch;">
+<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 24px 28px;">
 <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #00753A;">Purpose of this document</div>
-<ul style="margin: 12px 0 0; padding-left: 20px; color: #2F5A47; display: flex; flex-direction: column; gap: 6px;"><li>Built from what I learned in the job description and two rounds of interviews.</li><li>Showcases my product thinking for discovery and recommendations, plus login, role based access, and order tracking.</li><li>Shows the metrics I would measure to know it is working.</li></ul>
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;; margin-top:12px;"><li>Built from the job description and two rounds of interviews.</li><li>Shows my product thinking and the metrics I would measure.</li></ul>
 </div>
-<div style="margin-top: 36px; display: flex; flex-wrap: wrap; gap: 16px;">
-<a href="#proof" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 28px; background: #00E15D; color: #003D24; border-radius: 999px; font-weight: 600; text-decoration: none;">See the evidence</a>
-<a href="https://mrsspockdeepa.github.io" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 28px; border: 1.5px solid #003D24; color: #003D24; border-radius: 999px; font-weight: 600; text-decoration: none;">Read my full portfolio</a>
+<div style="background: #FFFFFF; border: 1px solid #BFE5C7; border-radius: 16px; padding: 24px 28px;">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #00753A;">Five minute path</div>
+<div style="margin-top:8px; display:flex; flex-direction:column;">
+<a href="#proof" style="display:flex; gap:10px; align-items:baseline; text-decoration:none; color:#003D24; padding:4px 0;"><span style="font-family: 'Libre Franklin', system-ui, sans-serif; font-weight:700; color:#00753A;">1</span><span style="font-weight:600;">Evidence</span><span style="color:#2F5A47; font-size:14px;">30 sec</span></a>
+<a href="#approach" style="display:flex; gap:10px; align-items:baseline; text-decoration:none; color:#003D24; padding:4px 0;"><span style="font-family: 'Libre Franklin', system-ui, sans-serif; font-weight:700; color:#00753A;">2</span><span style="font-weight:600;">Discovery approach</span><span style="color:#2F5A47; font-size:14px;">90 sec</span></a>
+<a href="#phases" style="display:flex; gap:10px; align-items:baseline; text-decoration:none; color:#003D24; padding:4px 0;"><span style="font-family: 'Libre Franklin', system-ui, sans-serif; font-weight:700; color:#00753A;">3</span><span style="font-weight:600;">Sequenced roadmap</span><span style="color:#2F5A47; font-size:14px;">60 sec</span></a>
+<a href="#metrics" style="display:flex; gap:10px; align-items:baseline; text-decoration:none; color:#003D24; padding:4px 0;"><span style="font-family: 'Libre Franklin', system-ui, sans-serif; font-weight:700; color:#00753A;">4</span><span style="font-weight:600;">Experiment and metrics</span><span style="color:#2F5A47; font-size:14px;">90 sec</span></a>
+
+</div>
+<div style="margin-top:8px; color:#2F5A47; font-size:13px;">Optional depth is collapsed at the bottom.</div>
+</div>
 </div>
 </div>
 
@@ -99,70 +109,16 @@ div[style*="padding: 32px;"]{padding:24px !important}
 <div id="fit" style="max-width: 1120px; margin: 0 auto; padding: 96px 24px 40px; box-sizing: border-box;">
 <div style="font-size: 14px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #00753A;">The fit</div>
 <h2 style="margin: 12px 0 0; max-width: 820px; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.12; letter-spacing: -0.01em;">Your job description, and where I have already done the work.</h2>
-<div style="margin-top: 40px; border-top: 1px solid #003D24;">
+<div style="margin-top: 32px; border-top: 1px solid #003D24;">
+<div class="stk2" style="display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 40px; padding: 18px 0; border-bottom: 1px solid #BFE5C7;"><div style="font-family: 'Libre Franklin', system-ui, sans-serif; font-size: 20px; line-height: 1.3;">5+ years on consumer e-commerce</div><div style="color: #2F5A47;">$2M per month in new revenue from bags and seat upgrades at Alaska Airlines</div></div>
 
-<div class="stack" style="display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 40px; padding: 22px 0; border-bottom: 1px solid #BFE5C7;">
-<div style="font-family: 'Libre Franklin', system-ui, sans-serif; font-size: 21px; line-height: 1.3;">5+ years on consumer e-commerce products</div>
-<div><ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>10+ years across aviation, healthcare, fintech, and marketplaces</li><li>Alaska Airlines: built $2M per month in new e-commerce revenue from bags and seat upgrades</li></ul></div>
-</div>
+<div class="stk2" style="display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 40px; padding: 18px 0; border-bottom: 1px solid #BFE5C7;"><div style="font-family: 'Libre Franklin', system-ui, sans-serif; font-size: 20px; line-height: 1.3;">Marketplace experience</div><div style="color: #2F5A47;">Co-led Carrier Connect across Alaska and oneworld partner apps</div></div>
 
-<div class="stack" style="display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 40px; padding: 22px 0; border-bottom: 1px solid #BFE5C7;">
-<div style="font-family: 'Libre Franklin', system-ui, sans-serif; font-size: 21px; line-height: 1.3;">Marketplace experience</div>
-<div><ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Co-led Carrier Connect, a marketplace across Alaska and oneworld partner apps</li></ul></div>
-</div>
+<div class="stk2" style="display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 40px; padding: 18px 0; border-bottom: 1px solid #BFE5C7;"><div style="font-family: 'Libre Franklin', system-ui, sans-serif; font-size: 20px; line-height: 1.3;">Innovating for customers</div><div style="color: #2F5A47;">Cut an eight page check in to three clicks, and built verification that finishes in under two minutes</div></div>
 
-<div class="stack" style="display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 40px; padding: 22px 0; border-bottom: 1px solid #BFE5C7;">
-<div style="font-family: 'Libre Franklin', system-ui, sans-serif; font-size: 21px; line-height: 1.3;">Innovating on behalf of customers</div>
-<div><ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Cut an eight page check in to a one page, three click flow</li><li>Built document verification that finishes in under two minutes</li></ul></div>
-</div>
+<div class="stk2" style="display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 40px; padding: 18px 0; border-bottom: 1px solid #BFE5C7;"><div style="font-family: 'Libre Franklin', system-ui, sans-serif; font-size: 20px; line-height: 1.3;">Analytical, hypothesis first</div><div style="color: #2F5A47;">A/B tests in Optimizely, and a 17% lift in enrollment conversion at Aetna</div></div>
 
-<div class="stack" style="display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 40px; padding: 22px 0; border-bottom: 1px solid #BFE5C7;">
-<div style="font-family: 'Libre Franklin', system-ui, sans-serif; font-size: 21px; line-height: 1.3;">Analytical, hypothesis first</div>
-<div><ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Ran A/B tests in Optimizely</li><li>Built funnel dashboards at Aetna, lifting enrollment conversion 17%</li></ul></div>
-</div>
-
-<div class="stack" style="display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 40px; padding: 22px 0; border-bottom: 1px solid #BFE5C7;">
-<div style="font-family: 'Libre Franklin', system-ui, sans-serif; font-size: 21px; line-height: 1.3;">Collaboration across functions</div>
-<div><ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Partnered with Design, Engineering, and Analytics</li><li>Aligned Alaska, oneworld, and partner airline teams around one integration</li></ul></div>
-</div>
-
-
-</div>
-</div>
-
-<!-- WORK -->
-<div id="work" style="max-width: 1120px; margin: 0 auto; padding: 72px 24px 40px; box-sizing: border-box;">
-<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #00753A;">The work</div>
-<h2 style="margin: 12px 0 0; max-width: 820px; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.12; letter-spacing: -0.01em;">Discovery, from four angles.</h2>
-<div class="stack" style="margin-top: 40px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px;">
-
-<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
-<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Alaska Airlines and oneworld</div>
-<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2;">Carrier Connect marketplace</h3>
-<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Defined the value proposition and integration architecture across partner apps</li><li>Owned the check in experience</li><li><b>Result:</b> a new cross app discovery and acquisition channel</li></ul>
-<p style="margin: 0; color: #00753A; font-weight: 600;">At ezCater: two sided marketplaces work when both sides can be found and trusted.</p>
-</div>
-
-<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
-<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Alaska Airlines</div>
-<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2;">Check in modernization</h3>
-<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Built the roadmap and a test process balancing upsell revenue and satisfaction</li><li><b>Result:</b> 87% digital self service adoption and $2M per month in new revenue</li></ul>
-<p style="margin: 0; color: #00753A; font-weight: 600;">At ezCater: the right add on at the right moment, without hurting the experience.</p>
-</div>
-
-<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
-<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Aetna</div>
-<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2;">Digital enrollment funnel</h3>
-<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Redesigned journeys and ran A/B tests</li><li>Built KPI dashboards with Analytics</li><li><b>Result:</b> enrollment conversion up 17%</li></ul>
-<p style="margin: 0; color: #00753A; font-weight: 600;">At ezCater: measuring the path from browsing to ordering end to end.</p>
-</div>
-
-<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
-<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Boeing and Jeppesen</div>
-<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2;">E-commerce platform</h3>
-<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Redesigned bundle discovery and checkout for business buyers</li><li>Used data informed UX changes</li><li><b>Result:</b> improved conversion</li></ul>
-<p style="margin: 0; color: #00753A; font-weight: 600;">At ezCater: business buyers choose from bundles, and clear discovery drives the order.</p>
-</div>
+<div class="stk2" style="display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 40px; padding: 18px 0; border-bottom: 1px solid #BFE5C7;"><div style="font-family: 'Libre Franklin', system-ui, sans-serif; font-size: 20px; line-height: 1.3;">Cross functional collaboration</div><div style="color: #2F5A47;">Design, Engineering, Analytics, and partner airlines aligned on one integration</div></div>
 
 </div>
 </div>
@@ -170,180 +126,248 @@ div[style*="padding: 32px;"]{padding:24px !important}
 <!-- APPROACH -->
 <div id="approach" style="max-width: 1120px; margin: 0 auto; padding: 72px 24px 40px; box-sizing: border-box;">
 <div style="font-size: 14px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #00753A;">Discovery &amp; recommendations</div>
-<h2 style="margin: 12px 0 0; max-width: 820px; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.12; letter-spacing: -0.01em;">Ask first. Recommend second.</h2>
-<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;; font-size:19px; margin-top:24px; max-width:760px;"><li>Recommendations are not a longer list. They are the right few.</li><li>Discovery comes first: team size, how often they order, occasion, budget, time of day, and dietary restrictions.</li><li>Then rank on fit. Taste and novelty break the tie.</li></ul>
-<div class="stack" style="margin-top: 40px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: stretch;">
+<h2 style="margin: 12px 0 0; max-width: 860px; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.12; letter-spacing: -0.01em;">Browse first. Ask only what changes the results.</h2>
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;; font-size:19px; margin-top:24px; max-width:760px;"><li>A questionnaire before any value risks abandonment. So I infer what I can, show results immediately, and ask only questions that would change them.</li><li>I ask for more only when confidence is low, such as a new group.</li></ul>
+<div class="stack" style="margin-top: 32px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: stretch;">
 
 <div style="background: #FFFFFF; border: 1px solid #BFE5C7; border-radius: 16px; box-shadow: 0 10px 28px rgba(0,61,36,0.10); padding: 26px; display: flex; flex-direction: column; gap: 16px;">
-<div style="display:flex; align-items:center; gap:10px;"><span style="width:26px; height:26px; border-radius:999px; background:#003D24; color:#FFFFFF; display:inline-flex; align-items:center; justify-content:center; font-size:13px; font-weight:700;">1</span><span style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Discovery</span></div>
-<div style="font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: 22px; line-height:1.2;">Tell us about this order</div>
-<div><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Ordering for</div><div style="margin-top:8px; display:flex; gap:8px; flex-wrap:wrap;"><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #00E15D; color:#003D24; font-size:14px; font-weight:600; background:#00E15D;">Marketing team</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF;">Sales team</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF;">+ New group</span></div></div>
-<div><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Team size</div><div style="margin-top:8px; display:flex; gap:8px; flex-wrap:wrap;"><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF;">1 to 5</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #00E15D; color:#003D24; font-size:14px; font-weight:600; background:#00E15D;">6 to 15</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF;">16 to 30</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF;">30+</span></div></div>
-<div><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Occasion</div><div style="margin-top:8px; display:flex; gap:8px; flex-wrap:wrap;"><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF;">Client meeting</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #00E15D; color:#003D24; font-size:14px; font-weight:600; background:#00E15D;">Team lunch</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF;">Celebration</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF;">All hands</span></div></div>
-<div><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">How often</div><div style="margin-top:8px; display:flex; gap:8px; flex-wrap:wrap;"><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF;">One time</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF;">Monthly</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #00E15D; color:#003D24; font-size:14px; font-weight:600; background:#00E15D;">Weekly</span></div></div>
-<div style="display:grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-<div><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Budget per person</div><div style="margin-top:8px; border: 1px solid #9FCBB0; border-radius: 8px; padding: 10px 12px; color: #003D24; font-size:14px;">$18</div></div>
-<div><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Delivery time</div><div style="margin-top:8px; border: 1px solid #9FCBB0; border-radius: 8px; padding: 10px 12px; color: #003D24; font-size:14px;">Thu, 12:00 pm</div></div>
+<div style="display:flex; align-items:center; gap:10px;"><span style="width:26px; height:26px; border-radius:999px; background:#003D24; color:#FFFFFF; display:inline-flex; align-items:center; justify-content:center; font-size:13px; font-weight:700;">1</span><span style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Infer</span></div>
+<div style="font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: 22px; line-height:1.2;">What we already know</div>
+<div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;"><span style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Ordering for</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #00E15D; color:#003D24; font-size:14px; font-weight:600; background:#00E15D; font-size:13px; padding:4px 10px;">Marketing team</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF; font-size:13px; padding:4px 10px;">Change</span></div>
+<div>
+<div style="display:flex; justify-content:space-between; gap:12px; padding:9px 0; border-top:1px solid #BFE5C7;"><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47; padding-top:3px;">Team size</div><div style="text-align:right;"><div style="font-weight:600; color:#003D24;">About 12</div><div style="color:#2F5A47; font-size:12px;">Past orders: 8 to 15</div></div></div>
+<div style="display:flex; justify-content:space-between; gap:12px; padding:9px 0; border-top:1px solid #BFE5C7;"><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47; padding-top:3px;">Occasion</div><div style="text-align:right;"><div style="font-weight:600; color:#003D24;">Team lunch</div><div style="color:#2F5A47; font-size:12px;">Weekly, Thursdays</div></div></div>
+<div style="display:flex; justify-content:space-between; gap:12px; padding:9px 0; border-top:1px solid #BFE5C7;"><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47; padding-top:3px;">Budget</div><div style="text-align:right;"><div style="font-weight:600; color:#003D24;">Up to $20 per person</div><div style="color:#2F5A47; font-size:12px;">Recent orders</div></div></div>
+<div style="display:flex; justify-content:space-between; gap:12px; padding:9px 0; border-top:1px solid #BFE5C7;"><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47; padding-top:3px;">Dietary</div><div style="text-align:right;"><div style="font-weight:600; color:#003D24;">Vegetarian, gluten free</div><div style="color:#2F5A47; font-size:12px;">Past orders</div></div></div>
 </div>
-<div><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Dietary restrictions</div><div style="margin-top:8px; display:flex; gap:8px; flex-wrap:wrap;"><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #00E15D; color:#003D24; font-size:14px; font-weight:600; background:#00E15D;">Vegetarian</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF;">Vegan</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #00E15D; color:#003D24; font-size:14px; font-weight:600; background:#00E15D;">Gluten free</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF;">Nut allergy</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF;">Halal</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF;">Kosher</span></div></div>
-<div style="background:#D7FCDC; border-radius:10px; padding:12px; font-size:14px; color:#2F5A47;"><b style="color:#003D24;">Already known, so we skip it:</b> this group's past orders. A new group starts with the essentials only.</div>
-<div style="display:flex; align-items:center; justify-content:center; min-height: 44px; border-radius: 999px; background:#00E15D; color:#003D24; font-weight:600; font-size:15px;">See recommendations</div>
+<div style="background:#D7FCDC; border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:10px;">
+<div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">One question that changes the results</div>
+<div style="font-weight:600; color:#003D24;">About how many this time?</div>
+<div style="display:flex; gap:8px; flex-wrap:wrap;"><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF;">8 to 10</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF;">11 to 15</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF;">16+</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF; border-style:dashed;">Skip, use 12</span></div>
+</div>
 </div>
 
 
 <div style="background: #FFFFFF; border: 1px solid #BFE5C7; border-radius: 16px; box-shadow: 0 10px 28px rgba(0,61,36,0.10); padding: 26px; display: flex; flex-direction: column; gap: 16px;">
-<div style="display:flex; align-items:center; gap:10px;"><span style="width:26px; height:26px; border-radius:999px; background:#003D24; color:#FFFFFF; display:inline-flex; align-items:center; justify-content:center; font-size:13px; font-weight:700;">2</span><span style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Recommendations</span></div>
-<div style="font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: 22px; line-height:1.2;">The right three, not a long list</div>
-<div style="display:flex; gap:8px; flex-wrap:wrap;">
-<span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF; font-size:13px; padding:4px 10px;">6 to 15 people</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF; font-size:13px; padding:4px 10px;">Team lunch</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF; font-size:13px; padding:4px 10px;">$18 per person</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF; font-size:13px; padding:4px 10px;">Thu, noon</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF; font-size:13px; padding:4px 10px;">Vegetarian</span><span style="display:inline-flex; align-items:center; padding: 8px 14px; border-radius: 999px; border: 1.5px solid #9FCBB0; color:#003D24; font-size:14px; font-weight:500; background:#FFFFFF; font-size:13px; padding:4px 10px;">Gluten free</span>
-</div>
+<div style="display:flex; align-items:center; gap:10px;"><span style="width:26px; height:26px; border-radius:999px; background:#003D24; color:#FFFFFF; display:inline-flex; align-items:center; justify-content:center; font-size:13px; font-weight:700;">2</span><span style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Browse now</span></div>
+<div style="font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: 22px; line-height:1.2;">Results are on screen from the first second</div>
+<div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;"><span style="display:inline-block; padding:4px 12px; border-radius:999px; background:#D7FCDC; border:1px solid #BFE5C7; color:#003D24; font-size:13px; font-weight:600;">Confidence: medium</span><span style="color:#2F5A47; font-size:13px;">One answer would sharpen this.</span></div>
 <div>
 
-<div style="display:flex; gap:14px; align-items:flex-start; padding: 16px 0; border-top: 1px solid #BFE5C7;">
-<div style="width:44px; height:44px; border-radius:10px; background:#D7FCDC; flex-shrink:0;"></div>
+<div style="display:flex; gap:14px; align-items:flex-start; padding: 14px 0; border-top: 1px solid #BFE5C7;">
+<div style="width:40px; height:40px; border-radius:10px; background:#D7FCDC; flex-shrink:0;"></div>
 <div style="flex:1;">
 <div style="display:flex; justify-content:space-between; gap:8px; align-items:baseline;"><div style="font-weight:600;">Basil and Vine</div><div style="color:#2F5A47; font-size:14px; white-space:nowrap;">$16 per person</div></div>
-<div style="margin-top:4px;"><span style="display:inline-block; padding:2px 10px; border-radius:999px; background:#00E15D; color:#003D24; font-size:12px; font-weight:600;">Best fit</span></div>
-<div style="margin-top:8px; color:#2F5A47; font-size:14px;">Under budget, with vegetarian and gluten free options labeled, and a strong on time record for group lunches this size.</div>
+<div style="margin-top:4px;"><span style="display:inline-block; padding:2px 10px; border-radius:999px; background:#00E15D; color:#003D24; font-size:12px; font-weight:600;">Best fit</span> <span style="color:#2F5A47; font-size:14px;">Under budget, veg and gluten free labeled, strong on time record.</span></div>
 </div>
 </div>
 
 
-<div style="display:flex; gap:14px; align-items:flex-start; padding: 16px 0; border-top: 1px solid #BFE5C7;">
-<div style="width:44px; height:44px; border-radius:10px; background:#D7FCDC; flex-shrink:0;"></div>
+<div style="display:flex; gap:14px; align-items:flex-start; padding: 14px 0; border-top: 1px solid #BFE5C7;">
+<div style="width:40px; height:40px; border-radius:10px; background:#D7FCDC; flex-shrink:0;"></div>
 <div style="flex:1;">
 <div style="display:flex; justify-content:space-between; gap:8px; align-items:baseline;"><div style="font-weight:600;">Hearth Table</div><div style="color:#2F5A47; font-size:14px; white-space:nowrap;">$17 per person</div></div>
-<div style="margin-top:4px;"><span style="display:inline-block; padding:2px 10px; border-radius:999px; background:#D7FCDC; color:#003D24; font-size:12px; font-weight:600;">Something new</span></div>
-<div style="margin-top:8px; color:#2F5A47; font-size:14px;">A change from your last two orders, in a build your own bowl format that covers both dietary needs.</div>
+<div style="margin-top:4px;"><span style="display:inline-block; padding:2px 10px; border-radius:999px; background:#D7FCDC; color:#003D24; font-size:12px; font-weight:600;">Something new</span> <span style="color:#2F5A47; font-size:14px;">A change from your last two orders, covers both dietary needs.</span></div>
 </div>
 </div>
 
 
-<div style="display:flex; gap:14px; align-items:flex-start; padding: 16px 0; border-top: 1px solid #BFE5C7;">
-<div style="width:44px; height:44px; border-radius:10px; background:#D7FCDC; flex-shrink:0;"></div>
+<div style="display:flex; gap:14px; align-items:flex-start; padding: 14px 0; border-top: 1px solid #BFE5C7;">
+<div style="width:40px; height:40px; border-radius:10px; background:#D7FCDC; flex-shrink:0;"></div>
 <div style="flex:1;">
 <div style="display:flex; justify-content:space-between; gap:8px; align-items:baseline;"><div style="font-weight:600;">Corner Deli Co.</div><div style="color:#2F5A47; font-size:14px; white-space:nowrap;">$14 per person</div></div>
-<div style="margin-top:4px;"><span style="display:inline-block; padding:2px 10px; border-radius:999px; background:#D7FCDC; color:#003D24; font-size:12px; font-weight:600;">Familiar favorite</span></div>
-<div style="margin-top:8px; color:#2F5A47; font-size:14px;">Your team has ordered here before without a delivery issue, with gluten free bread available.</div>
+<div style="margin-top:4px;"><span style="display:inline-block; padding:2px 10px; border-radius:999px; background:#D7FCDC; color:#003D24; font-size:12px; font-weight:600;">Familiar</span> <span style="color:#2F5A47; font-size:14px;">Ordered before with no delivery issue.</span></div>
 </div>
 </div>
 
 </div>
-<div style="color:#00753A; font-weight:600; font-size:14px;">Fit comes first: size, budget, timing, dietary needs. Taste and novelty break the tie.</div>
+<div style="display:flex; align-items:center; justify-content:center; min-height:44px; border-radius:999px; border:1.5px solid #003D24; color:#003D24; font-weight:600;">Browse all options</div>
 <div style="color:#2F5A47; font-size:12px;">Illustrative sample data, not real ezCater listings.</div>
 </div>
 
 </div>
-
-<div style="margin-top: 64px;">
-<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 26px; line-height: 1.2;">How the engine decides</h3><div style="margin-top:8px; color:#2F5A47; max-width:760px;">Three steps, in order. The weights below are starting hypotheses I would tune with experiments.</div>
 <div class="stack" style="margin-top: 24px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px;">
+<div style="background:#FFFFFF; border:1px solid #BFE5C7; border-radius:14px; padding:20px;"><div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #00753A;">High confidence</div><ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;; margin-top:8px;"><li>Show results. Ask nothing.</li></ul></div>
+<div style="background:#FFFFFF; border:1px solid #BFE5C7; border-radius:14px; padding:20px;"><div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #00753A;">Medium confidence</div><ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;; margin-top:8px;"><li>Show results. Ask one inline question.</li></ul></div>
+<div style="background:#FFFFFF; border:1px solid #BFE5C7; border-radius:14px; padding:20px;"><div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #00753A;">Low confidence, such as a new group</div><ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;; margin-top:8px;"><li>Show reliable options nearby. Ask two or three short questions, most valuable first.</li></ul></div>
+</div>
+<div style="margin-top: 16px; color:#2F5A47; max-width: 820px;"><b style="color:#003D24;">The rule:</b> a question earns its place only if the answer would change eligibility or the top results. When one person orders for several groups, each group keeps its own history.</div>
 
-<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+<div style="margin-top: 56px;">
+<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 26px; line-height: 1.2;">How the engine decides</h3>
+<div class="stack" style="margin-top: 20px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px;">
+
+<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 10px;">
 <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Step 1 · Filter</div>
-<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.2;">Can this restaurant fulfill the order?</h3>
-<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li><b>Capacity and lead time</b> for this headcount</li><li><b>Distance and delivery window,</b> so it arrives on time</li><li><b>Dietary needs</b> the menu can actually meet</li><li><b>Open and accepting orders</b> at that time</li><li><b>Minimum order value</b> versus what the team will spend</li></ul><div style="color:#2F5A47; font-size:13px; border-top:1px solid #BFE5C7; padding-top:10px;">Hard constraints filter. They never trade off against taste.</div>
+<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.2;">Can it fulfill the order?</h3>
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Capacity and lead time</li><li>Distance and delivery window</li><li>Dietary fit and minimum order value</li></ul>
 </div>
 
 
-<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 10px;">
 <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Step 2 · Rank</div>
-<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.2;">Which options are most likely to go well?</h3>
-<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li><b>Team history:</b> reorders, repeat frequency, ratings</li><li><b>Similar teams:</b> same size, occasion, budget band, and area</li><li><b>Restaurant quality:</b> review velocity and trend, on time rate, order accuracy, issue rate</li><li><b>Budget fit</b> and cuisine variety versus recent orders</li><li><b>Context:</b> day, time, and occasion</li></ul><div style="color:#2F5A47; font-size:13px; border-top:1px solid #BFE5C7; padding-top:10px;">Reliability signals count for more than raw popularity.</div>
+<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.2;">Will it go well?</h3>
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Team history and similar teams</li><li>On time rate, issue rate, review trend</li><li>Budget fit and variety</li></ul>
 </div>
 
 
-<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 10px;">
 <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Step 3 · Balance</div>
-<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.2;">Safe pick or something new?</h3>
-<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li><b>Default mix:</b> two proven picks and one exploratory pick</li><li><b>Lean familiar</b> for high stakes occasions such as client meetings</li><li><b>Lean new</b> for recurring team lunches, where repeat fatigue is real</li><li><b>New restaurants earn exploration slots</b> by passing quality gates, with exposure ramped up gradually</li></ul><div style="color:#2F5A47; font-size:13px; border-top:1px solid #BFE5C7; padding-top:10px;">Track trial rate against order issue rate, so novelty never costs reliability.</div>
+<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.2;">Safe or new?</h3>
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Two proven picks, one exploratory</li><li>Lean familiar for client meetings</li><li>New caterers earn slots through quality gates</li></ul>
 </div>
 
 </div>
-<div style="margin-top: 24px; background: #FFFFFF; border: 1px solid #BFE5C7; border-left: 6px solid #00E15D; border-radius: 12px; padding: 24px 28px;">
-<div style="font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: 20px; line-height: 1.25;">A $20 per person budget: show exactly $20, or protect the restaurant's minimum?</div>
-<div style="margin-top: 12px;"><ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li><b>Budget is a ceiling, not a target.</b> Options at or under $20 rank on fit. I would not push the price up to reach $20.</li><li><b>Restaurants that clear their minimum naturally rank first.</b> For example, 12 people at $20 is $240, which meets a $200 minimum.</li><li><b>If the order falls just short,</b> show it openly: 'Add $30 to meet the minimum.' Suggest sides or drinks, and show the new per person price. The buyer decides.</li><li><b>No silent upsell.</b> The buyer sees the total and the per person price before choosing.</li><li><b>Guardrails:</b> fulfillment success and cancellations alongside AOV and satisfaction, so a higher order value never hides a worse experience.</li></ul></div>
+<div style="margin-top: 20px; background: #FFFFFF; border: 1px solid #BFE5C7; border-left: 6px solid #00E15D; border-radius: 12px; padding: 20px 24px;">
+<div style="font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: 19px; line-height: 1.25;">A $20 per person budget: hit $20, or protect the minimum?</div>
+<div style="margin-top: 10px;"><ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li><b>Budget is a ceiling, not a target.</b> I would not push prices up.</li><li><b>Caterers that clear their minimum naturally rank first.</b> Twelve people at $20 is $240, which clears a $200 minimum.</li><li><b>If an order falls short, show it openly:</b> Add $30 to meet the minimum, with sides or drinks suggested. No silent upsell, and fulfillment success is a guardrail.</li></ul></div>
 </div>
 </div>
 
-<div style="margin-top: 64px;">
-<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 26px; line-height: 1.2;">Cold start: when there is no history</h3><div style="margin-top:8px; color:#2F5A47; max-width:760px;">Two cases: a brand new team, and one person ordering for different groups.</div>
-<div class="stack" style="margin-top: 24px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px;">
-
-<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
-<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">New team or account</div>
-<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.2;">First order, no history</h3>
-<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li><b>Ask only the essentials:</b> headcount, occasion and time, budget, and dietary needs. Everything else is optional and comes later.</li><li><b>Use smart defaults:</b> location, company size, and popular picks among similar teams nearby.</li><li><b>Lean on reliability for the first order.</b> Show proven restaurants with one exploratory pick, since trust comes before novelty.</li><li><b>Learn quickly:</b> one tap after delivery, such as 'Would order again' or 'Dietary miss,' builds the team's profile.</li></ul><div style="color:#2F5A47; font-size:13px; border-top:1px solid #BFE5C7; padding-top:10px;">Metric: first order conversion and second order rate for new teams.</div>
+<div style="margin-top: 56px;">
+<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 26px; line-height: 1.2;">One strategy across every discovery surface</h3>
+<div style="margin-top: 16px;">
+<div class="stk2" style="display:grid; grid-template-columns: minmax(0,1.1fr) minmax(0,2.4fr) minmax(0,1.6fr); gap:20px; padding:14px 0; border-top:1px solid #BFE5C7;"><div style="font-weight:600;">Caterers</div><div style="color:#2F5A47;">Filter, rank, balance. Top picks first, full list one scroll away.</div><div style="color:#2F5A47; font-size:14px;"><b>Measure:</b> search to order conversion</div></div>
+<div class="stk2" style="display:grid; grid-template-columns: minmax(0,1.1fr) minmax(0,2.4fr) minmax(0,1.6fr); gap:20px; padding:14px 0; border-top:1px solid #BFE5C7;"><div style="font-weight:600;">Menus</div><div style="color:#2F5A47;">Group friendly formats first, with dietary labels.</div><div style="color:#2F5A47; font-size:14px;"><b>Measure:</b> menu to cart conversion</div></div>
+<div class="stk2" style="display:grid; grid-template-columns: minmax(0,1.1fr) minmax(0,2.4fr) minmax(0,1.6fr); gap:20px; padding:14px 0; border-top:1px solid #BFE5C7;"><div style="font-weight:600;">Items</div><div style="color:#2F5A47;">Suggestions respect budget and headcount, and complete the order.</div><div style="color:#2F5A47; font-size:14px;"><b>Measure:</b> attach rate, AOV</div></div>
+<div class="stk2" style="display:grid; grid-template-columns: minmax(0,1.1fr) minmax(0,2.4fr) minmax(0,1.6fr); gap:20px; padding:14px 0; border-top:1px solid #BFE5C7;"><div style="font-weight:600;">Curated collections</div><div style="color:#2F5A47;">Built around occasions: rules first, editorial polish second.</div><div style="color:#2F5A47; font-size:14px;"><b>Measure:</b> collection conversion, new caterer trial</div></div>
+<div class="stk2" style="display:grid; grid-template-columns: minmax(0,1.1fr) minmax(0,2.4fr) minmax(0,1.6fr); gap:20px; padding:14px 0; border-top:1px solid #BFE5C7;"><div style="font-weight:600;">Merchandising</div><div style="color:#2F5A47;">Promotions sit inside the same filter. Labeled, capped, and tested with holdouts.</div><div style="color:#2F5A47; font-size:14px;"><b>Measure:</b> incremental orders, issue rate</div></div>
+</div>
+<div style="border-top:1px solid #BFE5C7; padding-top:14px; color:#2F5A47;">Context is inferred once and carried across every surface.</div>
 </div>
 
-
-<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
-<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">One person, many groups</div>
-<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.2;">Switching context</h3>
-<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li><b>Ask 'Who is this order for?' first,</b> with saved groups such as Sales team, Executive board, and Field team.</li><li><b>History and preferences belong to the group,</b> not the person, so one group's orders never shape another's picks.</li><li><b>A new group starts cold</b> but keeps company level settings: delivery address, payment, and spend limits.</li><li><b>Occasion reshapes the ranking:</b> polished and precise for an executive board, fast and portable for a field team.</li></ul><div style="color:#2F5A47; font-size:13px; border-top:1px solid #BFE5C7; padding-top:10px;">Ties to role based access: assistants can order for several groups under one account.</div>
-</div>
-
+<div style="margin-top: 40px; background:#D7FCDC; border:1px solid #BFE5C7; border-radius:14px; padding:20px 24px;">
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;; color:#2F5A47;"><li>ezCater reports that 96% of workplaces tried a new restaurant in 2025, and 62% of employees who first tried one at work later ordered from it personally. Discovery is where that trial starts.</li><li>Source: <a href="https://www.ezcater.com/company/press-release/workplace-catering-is-a-powerful-acquisition-engine-for-restaurants-new-ezcater-data-reveals/" style="color:#00753A; font-weight:600;" target="_blank" rel="noopener">ezCater press release, May 5, 2026</a>. Company reported, from platform data and a survey of 2,300+ participants.</li></ul>
 </div>
 </div>
 
-<div style="height:8px"></div>
-<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;; margin-top:32px; max-width:760px;"><li>ezCater's May 2026 data: 96% of workplaces tried a new restaurant in 2025, and 62% of employees later ordered from those brands personally.</li><li>Discovery is where that trial starts.</li><li>KPIs to agree on early: search to order conversion, new restaurant trial, and repeat ordering.</li></ul>
+<!-- PHASES -->
+<div id="phases" style="max-width: 1120px; margin: 0 auto; padding: 72px 24px 40px; box-sizing: border-box;">
+<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #00753A;">Sequenced roadmap</div>
+<h2 style="margin: 12px 0 0; max-width: 860px; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.12; letter-spacing: -0.01em;">Three phases, each earning the next.</h2>
+<div class="stack" style="margin-top: 32px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; align-items: stretch;">
+
+<div style="background:#FFFFFF; border:1px solid #BFE5C7; border-radius:16px; padding:24px; display:flex; flex-direction:column; gap:14px;">
+<div style="display:flex; align-items:center; gap:10px;"><span style="width:26px; height:26px; border-radius:999px; background:#003D24; color:#FFFFFF; display:inline-flex; align-items:center; justify-content:center; font-size:13px; font-weight:700;">1</span><h3 style="margin:0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight:600; font-size:20px; line-height:1.2;">Eligibility and trust</h3></div>
+<div><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Problem</div><div style="margin-top:2px; color:#2F5A47;">Recommending a caterer that cannot fulfill the order is worse than recommending nothing.</div></div><div><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Dependency</div><div style="margin-top:2px; color:#2F5A47;">Reliable availability, capacity, and dietary data. Order to delivery event tracking.</div></div><div><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Experiment</div><div style="margin-top:2px; color:#2F5A47;">Eligibility filters and a reliability gate versus current results, with a team level holdout.</div></div><div><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Success threshold</div><div style="margin-top:2px; color:#2F5A47;">Issue and cancellation rates down 10% relative, with completed orders per team not lower.</div></div>
+</div>
+
+
+<div style="background:#FFFFFF; border:1px solid #BFE5C7; border-radius:16px; padding:24px; display:flex; flex-direction:column; gap:14px;">
+<div style="display:flex; align-items:center; gap:10px;"><span style="width:26px; height:26px; border-radius:999px; background:#003D24; color:#FFFFFF; display:inline-flex; align-items:center; justify-content:center; font-size:13px; font-weight:700;">2</span><h3 style="margin:0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight:600; font-size:20px; line-height:1.2;">Contextual relevance</h3></div>
+<div><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Problem</div><div style="margin-top:2px; color:#2F5A47;">One list for every team ignores group history, occasion, and budget.</div></div><div><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Dependency</div><div style="margin-top:2px; color:#2F5A47;">Phase 1 data quality, group profiles, and confidence scoring.</div></div><div><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Experiment</div><div style="margin-top:2px; color:#2F5A47;">Inferred context plus one question versus today's filters.</div></div><div><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Success threshold</div><div style="margin-top:2px; color:#2F5A47;">Completed orders per team up 2% relative, faster time to first relevant option, one question or fewer per session.</div></div>
+</div>
+
+
+<div style="background:#FFFFFF; border:1px solid #BFE5C7; border-radius:16px; padding:24px; display:flex; flex-direction:column; gap:14px;">
+<div style="display:flex; align-items:center; gap:10px;"><span style="width:26px; height:26px; border-radius:999px; background:#003D24; color:#FFFFFF; display:inline-flex; align-items:center; justify-content:center; font-size:13px; font-weight:700;">3</span><h3 style="margin:0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight:600; font-size:20px; line-height:1.2;">Exploration and merchandising</h3></div>
+<div><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Problem</div><div style="margin-top:2px; color:#2F5A47;">Teams repeat the same few caterers while new caterers, collections, and items stay hidden.</div></div><div><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Dependency</div><div style="margin-top:2px; color:#2F5A47;">Phase 2 relevance, quality gates, merchandising controls, and menu and item data.</div></div><div><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Experiment</div><div style="margin-top:2px; color:#2F5A47;">The exploratory pick test below, then collections and item suggestions.</div></div><div><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Success threshold</div><div style="margin-top:2px; color:#2F5A47;">Positive incremental completed orders per team, every guardrail inside its margin, new caterer trial up.</div></div>
+</div>
+
+</div>
+<div style="margin-top: 16px; color:#2F5A47; font-size:13px;">Thresholds are illustrative. I would set them with Data before launch.</div>
 </div>
 
 <!-- METRICS -->
 <div id="metrics" style="max-width: 1120px; margin: 0 auto; padding: 72px 24px 40px; box-sizing: border-box;">
 <div style="font-size: 14px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #00753A;">Metrics</div>
-<h2 style="margin: 12px 0 0; max-width: 820px; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.12; letter-spacing: -0.01em;">What I would measure first.</h2>
-<div style="margin-top: 32px; background: #003D24; color: #FFFFFF; border-radius: 16px; padding: 32px;">
+<h2 style="margin: 12px 0 0; max-width: 820px; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.12; letter-spacing: -0.01em;">What I would measure, and one experiment I would run first.</h2>
+<div style="margin-top: 32px; background: #003D24; color: #FFFFFF; border-radius: 16px; padding: 28px 32px;">
 <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #00E15D;">North star</div>
 <div style="margin-top: 10px; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: clamp(22px, 2.6vw, 30px); line-height: 1.2;">Discovery sessions that end in an on time, issue free order.</div>
-<ul style="margin: 16px 0 0; padding-left: 20px; color: #D7FCDC; display:flex; flex-direction:column; gap:6px;"><li>Conversion alone can be gamed by pushing familiar picks, so the metric only counts orders that were delivered well.</li><li>Every other metric below explains why this one moves.</li></ul>
+<div style="margin-top: 10px; color:#D7FCDC;">Conversion alone can be gamed by pushing familiar picks, so only well delivered orders count.</div>
 </div>
-<div class="stack" style="margin-top: 24px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px;">
+<div class="stack" style="margin-top: 20px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px;">
 
-<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
-<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Discovery</div>
-<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.2;">Are we learning what we need?</h3>
-<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li><b>Discovery completion rate:</b> share of sessions where team size, occasion, budget, time, and dietary needs are captured</li><li><b>Time to first relevant option</b></li><li><b>No eligible restaurant rate:</b> sessions that end with zero fits</li><li><b>Refinement rate:</b> how often users change filters after seeing results</li></ul>
-</div>
-
-<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
-<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Recommendations</div>
-<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.2;">Are the options right?</h3>
-<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li><b>Click through rate</b> on recommended restaurants</li><li><b>Recommendation to order conversion</b></li><li><b>Top 3 acceptance:</b> share of orders placed from the first three options</li><li><b>Dismiss and override rate</b></li><li><b>Reorder rate</b> from recommended restaurants</li><li><b>Explore versus familiar mix</b> in orders placed</li></ul>
+<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 10px;">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Discovery quality</div>
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Inference coverage</li><li>Questions per session, and drop off</li><li>Time to first relevant option</li></ul>
 </div>
 
-<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+
+<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 10px;">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Recommendation quality</div>
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Recommendation to order conversion</li><li>Top three acceptance (diagnostic)</li><li>Explore versus familiar mix</li></ul>
+</div>
+
+
+<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 10px;">
 <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Business outcomes</div>
-<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.2;">Does it move the business?</h3>
-<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li><b>Search to order conversion</b></li><li><b>Cart abandonment rate,</b> including sessions interrupted by sign in</li><li><b>Average order value (AOV):</b> monitored alongside conversion, so a lift in one does not hide a drop in the other</li><li><b>New restaurant trial rate</b> (ezCater's 2025 figure: 96% of workplaces tried a new restaurant)</li><li><b>Repeat ordering rate</b> and buyer retention</li><li><b>First order conversion</b> and second order rate for new teams</li></ul>
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Search to order conversion</li><li>Completed orders per team</li><li>AOV and cart abandonment</li><li>New caterer trial, repeat ordering, first order conversion for new teams</li></ul>
 </div>
 
-<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
-<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Marketplace health</div>
-<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.2;">Are both sides winning?</h3>
-<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li><b>Restaurant exposure:</b> share of orders going to newer and smaller restaurants</li><li><b>First order success</b> for newly surfaced restaurants</li><li><b>Concentration:</b> share of orders going to the top restaurants</li></ul>
-</div>
 
-<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 10px;">
 <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Guardrails</div>
-<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.2;">What must never get worse?</h3>
-<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li><b>On time delivery rate</b></li><li><b>Order issue and refund rate</b></li><li><b>Post order satisfaction</b></li><li><b>Dietary mismatch incidents:</b> zero tolerance</li><li><b>Page and ranking latency</b></li></ul>
-</div>
-
-<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
-<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">How I would run it</div>
-<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.2;">Test, segment, review</h3>
-<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>A/B tests with a holdout group for every ranking change</li><li>Segment by team size, occasion, and new versus returning buyers</li><li>Weekly review with Data and Research, and a guardrail check before any rollout</li></ul>
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>On time rate</li><li>Issue, refund, and cancellation rates</li><li>Satisfaction</li><li>Dietary mismatches: zero tolerance</li></ul>
 </div>
 
 </div>
+
+<div style="margin-top: 56px;">
+<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #00753A;">Worked example</div>
+<h3 style="margin: 12px 0 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 26px; line-height: 1.2;">An exploratory pick in the top three</h3>
+<div style="margin-top: 20px; background: #003D24; color: #FFFFFF; border-radius: 16px; padding: 24px 28px;">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #00E15D;">Hypothesis</div>
+<div style="margin-top: 8px; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: clamp(18px, 2.2vw, 22px); line-height: 1.35;">For recurring teams, replacing the third recommendation with a quality gated exploratory caterer increases completed orders per team, because it reduces repeat fatigue without adding delivery risk.</div>
+</div>
+<div class="stack" style="margin-top: 20px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px;">
+
+<div style="background:#FFFFFF; border:1px solid #BFE5C7; border-radius:14px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #00753A;">Design</div>
+<h4 style="margin:0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight:600; font-size:18px; line-height:1.25;">Team level, not session level</h4>
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Randomize by team, 50/50</li><li>About four weeks, sized with Data, for example for a 2% lift</li><li>Read week 1 separately to catch novelty effects</li></ul>
+</div>
+
+
+<div style="background:#FFFFFF; border:1px solid #BFE5C7; border-radius:14px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #00753A;">Eligible audience</div>
+<h4 style="margin:0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight:600; font-size:18px; line-height:1.25;">Who is in</h4>
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Recurring teams: 3+ completed orders in 90 days, in markets with enough vetted new caterers</li><li>Excluded: first order users, approved vendor lists, very large events</li></ul>
+</div>
+
+
+<div style="background:#FFFFFF; border:1px solid #BFE5C7; border-radius:14px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #00753A;">Primary outcome</div>
+<h4 style="margin:0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight:600; font-size:18px; line-height:1.25;">Incremental completed orders</h4>
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Completed orders per eligible team over 28 days, treatment minus control</li><li>Completed means delivered, not canceled</li><li>Clicks and top three acceptance explain the result. They do not decide it.</li></ul>
+</div>
+
+
+<div style="background:#FFFFFF; border:1px solid #BFE5C7; border-radius:14px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #00753A;">Guardrails</div>
+<h4 style="margin:0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight:600; font-size:18px; line-height:1.25;">Must not get worse</h4>
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>On time, issue, refund, and cancellation rates</li><li>Satisfaction and AOV</li><li>Dietary mismatch: zero tolerance, immediate pause</li><li>Margins agreed before launch</li></ul>
+</div>
+
+
+<div style="background:#FFFFFF; border:1px solid #BFE5C7; border-radius:14px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #00753A;">Key segments</div>
+<h4 style="margin:0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight:600; font-size:18px; line-height:1.25;">Pre registered</h4>
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Team size and order frequency</li><li>Occasion, such as client meeting versus team lunch</li><li>Dietary complexity and new caterer supply density</li></ul>
+</div>
+
+
+<div style="background:#FFFFFF; border:1px solid #BFE5C7; border-radius:14px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #00753A;">Rollout decision rule</div>
+<h4 style="margin:0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight:600; font-size:18px; line-height:1.25;">Decided before we look</h4>
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li><b>Ship to all</b> if the lift is positive (95% interval above zero) and guardrails hold</li><li><b>Ship to a segment</b> if only a pre registered segment wins</li><li><b>Iterate</b> if a guardrail slips. <b>Stop</b> if flat or negative.</li><li>Ramp 5%, 25%, 50%, 100%, with a 5% holdout for 8 weeks</li></ul>
+</div>
+
+</div>
+<div style="margin-top: 16px; color:#2F5A47; font-size:13px;">Sample sizes and thresholds are illustrative. I would set them with Data and Research.</div>
+</div>
+</div>
+
+<!-- MORE -->
+<div id="more" class="tight" style="max-width: 1120px; margin: 0 auto; padding: 48px 24px 8px; box-sizing: border-box;">
+<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #00753A;">Optional depth</div>
+<div style="margin-top: 8px; color:#2F5A47; max-width:760px;">Collapsed by default: what else I heard in interviews, and past work.</div>
 </div>
 
 <!-- ROADMAP -->
-<div id="roadmap" style="max-width: 1120px; margin: 0 auto; padding: 72px 24px 40px; box-sizing: border-box;">
-<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #00753A;">On your roadmap</div>
-<h2 style="margin: 12px 0 0; max-width: 860px; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.12; letter-spacing: -0.01em;">A cleaner login, and role based access for teams that order together.</h2>
+<div id="login" class="tight" style="max-width: 1120px; margin: 0 auto; padding: 16px 24px 0; box-sizing: border-box;">
+<details style="border: 1px solid #BFE5C7; border-radius: 16px; padding: 0 24px; background: #FFFFFF;"><summary style="cursor: pointer; padding: 22px 0;"><h2 style="display: inline; margin: 0; max-width: 860px; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: clamp(22px, 2.8vw, 30px); line-height: 1.12; letter-spacing: -0.01em;">Login and role based access</h2> <span style="font-size: 14px; font-weight: 500; color: #2F5A47;">(tap to expand)</span></summary>
 <div style="margin-top: 12px; font-style: italic; color: #2F5A47; font-size: 15px;">(Note: Included based on roadmap priorities shared during the hiring manager interview.)</div>
 <ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;; font-size:19px; margin-top:24px; max-width:760px;"><li>Two near term priorities I heard in conversation: revamp login and add role based access.</li><li>ezCater already supports managing users and spend limits by team or location. The question is how someone gets in, and what they can do once there.</li><li>These screens are illustrative concepts, not ezCater's product. Every assumption gets validated with your data and users.</li></ul>
 
@@ -468,11 +492,12 @@ div[style*="padding: 32px;"]{padding:24px !important}
 </div></details>
 </div>
 </div>
+<div style="height: 32px;"></div></details>
 </div>
 
 <!-- TRACKING -->
-<div id="tracking" style="max-width: 1120px; margin: 0 auto; padding: 72px 24px 40px; box-sizing: border-box;">
-<details style="margin-top: 0; border: 1px solid #BFE5C7; border-radius: 16px; padding: 0 24px; background: #FFFFFF;"><summary style="cursor: pointer; padding: 22px 0;"><h2 style="display: inline; margin: 0; max-width: 860px; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: clamp(22px, 2.8vw, 30px); line-height: 1.12; letter-spacing: -0.01em;">Where is my order, and can I still change it?</h2> <span style="font-size: 14px; font-weight: 500; color: #2F5A47; white-space: nowrap;">(tap to expand)</span></summary>
+<div id="tracking" class="tight" style="max-width: 1120px; margin: 0 auto; padding: 16px 24px 0; box-sizing: border-box;">
+<details style="margin-top: 0; border: 1px solid #BFE5C7; border-radius: 16px; padding: 0 24px; background: #FFFFFF;"><summary style="cursor: pointer; padding: 22px 0;"><h2 style="display: inline; margin: 0; max-width: 860px; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: clamp(22px, 2.8vw, 30px); line-height: 1.12; letter-spacing: -0.01em;">Order tracking and change my order</h2> <span style="font-size: 14px; font-weight: 500; color: #2F5A47; white-space: nowrap;">(tap to expand)</span></summary>
 <ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;; font-size:19px; margin-top:24px; max-width:760px;"><li>Two things I heard: order tracking after checkout, and changing an order once it is placed.</li><li>Tracking answers where is my order with four clear statuses: processing, preparing, out for delivery, delivered.</li><li>Edits stay open until the kitchen cutoff. After that, Quick add lets the buyer add small ready made items.</li><li>These screens are illustrative concepts with sample data, not ezCater's product.</li></ul>
 <div class="stack" style="margin-top: 48px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; align-items: stretch;">
 
@@ -578,12 +603,49 @@ div[style*="padding: 32px;"]{padding:24px !important}
 <div style="height: 32px;"></div></details>
 </div>
 
+<!-- WORK -->
+<div id="work" class="tight" style="max-width: 1120px; margin: 0 auto; padding: 16px 24px 40px; box-sizing: border-box;">
+<details style="border: 1px solid #BFE5C7; border-radius: 16px; padding: 0 24px; background: #FFFFFF;"><summary style="cursor: pointer; padding: 22px 0;"><h2 style="display: inline; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: clamp(22px, 2.8vw, 30px); line-height: 1.2;">Selected past work, four angles on discovery</h2> <span style="font-size: 14px; font-weight: 500; color: #2F5A47;">(tap to expand)</span></summary>
+<div class="stack" style="margin-top: 40px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px;">
+
+<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Alaska Airlines and oneworld</div>
+<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2;">Carrier Connect marketplace</h3>
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Defined the value proposition and integration architecture across partner apps</li><li>Owned the check in experience</li><li><b>Result:</b> a new cross app discovery and acquisition channel</li></ul>
+<p style="margin: 0; color: #00753A; font-weight: 600;">At ezCater: two sided marketplaces work when both sides can be found and trusted.</p>
+</div>
+
+<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Alaska Airlines</div>
+<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2;">Check in modernization</h3>
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Built the roadmap and a test process balancing upsell revenue and satisfaction</li><li><b>Result:</b> 87% digital self service adoption and $2M per month in new revenue</li></ul>
+<p style="margin: 0; color: #00753A; font-weight: 600;">At ezCater: the right add on at the right moment, without hurting the experience.</p>
+</div>
+
+<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Aetna</div>
+<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2;">Digital enrollment funnel</h3>
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Redesigned journeys and ran A/B tests</li><li>Built KPI dashboards with Analytics</li><li><b>Result:</b> enrollment conversion up 17%</li></ul>
+<p style="margin: 0; color: #00753A; font-weight: 600;">At ezCater: measuring the path from browsing to ordering end to end.</p>
+</div>
+
+<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5A47;">Boeing and Jeppesen</div>
+<h3 style="margin: 0; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2;">E-commerce platform</h3>
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;"><li>Redesigned bundle discovery and checkout for business buyers</li><li>Used data informed UX changes</li><li><b>Result:</b> improved conversion</li></ul>
+<p style="margin: 0; color: #00753A; font-weight: 600;">At ezCater: business buyers choose from bundles, and clear discovery drives the order.</p>
+</div>
+
+</div>
+<div style="height: 32px;"></div></details>
+</div>
+
 <!-- WHY -->
-<div style="max-width: 1120px; margin: 0 auto; padding: 72px 24px 96px; box-sizing: border-box;">
-<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 20px; padding: 56px 48px;">
+<div style="max-width: 1120px; margin: 0 auto; padding: 40px 24px 96px; box-sizing: border-box;">
+<div style="background: #D7FCDC; border: 1px solid #BFE5C7; border-radius: 20px; padding: 48px;">
 <div style="font-size: 14px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #00753A;">Why ezCater</div>
-<h2 style="margin: 12px 0 0; max-width: 820px; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: clamp(28px, 3.6vw, 40px); line-height: 1.15; letter-spacing: -0.01em;">Workplace food is a marketplace where the buyer, the eaters, and the restaurant all have to be happy.</h2>
-<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;; margin-top:24px; max-width:760px;"><li>Complex real world rules, real users, and outcomes I can measure. That is the problem I enjoy most.</li><li>I build with AI every day, from agentic workflows for PRDs and creative briefs to side projects like SpellWithFriends.</li><li>I would be excited to bring that curiosity to the ezCater team.</li></ul>
+<h2 style="margin: 12px 0 0; max-width: 820px; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: clamp(26px, 3.4vw, 36px); line-height: 1.15; letter-spacing: -0.01em;">A marketplace where the buyer, the eaters, and the restaurant all have to be happy.</h2>
+<ul style="margin:0; padding-left:20px; color:#2F5A47; display:flex; flex-direction:column; gap:6px;; margin-top:20px; max-width:760px;"><li>Complex real world rules, real users, and outcomes I can measure.</li><li>I build with AI every day, from agentic PRD workflows to side projects like SpellWithFriends.</li></ul>
 </div>
 </div>
 
